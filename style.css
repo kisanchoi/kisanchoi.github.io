@@ -285,6 +285,11 @@ h3 {
   color: #333;
 }
 
+.cv-indent {
+  color: #555;
+  font-size: 1rem;
+}
+
 .cv-download {
   margin-top: 1.2rem;
   font-family: 'Inter', sans-serif;
