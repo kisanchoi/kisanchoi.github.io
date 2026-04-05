@@ -81,6 +81,23 @@ hr {
   margin: 3rem 0;
 }
 
+/* ─── Profile Block ─────────────────────────────────────────── */
+.profile-block {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #e0ddd6;
+  margin-top: 0.4rem;
+}
+
 /* ─── About Section ─────────────────────────────────────────── */
 h1 {
   font-size: 2.1rem;
@@ -310,4 +327,6 @@ footer a:hover {
   h1 { font-size: 1.7rem; }
   .cv-entry { flex-direction: column; gap: 0.1rem; }
   .cv-year { min-width: unset; }
+  .profile-block { flex-direction: column; align-items: center; text-align: center; }
+  .research-fields { justify-content: center; }
 }
