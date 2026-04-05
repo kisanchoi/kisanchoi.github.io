@@ -176,7 +176,7 @@ h2 {
 
 h3 {
   font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -195,7 +195,7 @@ h3 {
 }
 
 .paper-title {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 500;
   color: #111;
   margin-bottom: 0.2rem;
@@ -209,21 +209,21 @@ h3 {
 
 .paper-authors {
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #666;
   margin-bottom: 0.2rem;
 }
 
 .paper-meta {
   font-family: 'Inter', sans-serif;
-  font-size: 0.83rem;
+  font-size: 0.93rem;
   color: #888;
   margin-bottom: 0.2rem;
 }
 
 .paper-links {
   font-family: 'Inter', sans-serif;
-  font-size: 0.83rem;
+  font-size: 0.93rem;
   margin-bottom: 0.25rem;
 }
 
@@ -238,7 +238,7 @@ h3 {
 }
 
 .paper-abstract {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #555;
   margin-top: 0.3rem;
 }
@@ -274,21 +274,21 @@ h3 {
 
 .cv-year {
   font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   color: #888;
   min-width: 90px;
   flex-shrink: 0;
 }
 
 .cv-detail {
-  font-size: 0.98rem;
+  font-size: 1.08rem;
   color: #333;
 }
 
 .cv-download {
   margin-top: 1.2rem;
   font-family: 'Inter', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.98rem;
 }
 
 .cv-download a {
