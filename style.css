@@ -1,0 +1,313 @@
+/* ─── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #222;
+  background: #fafaf8;
+}
+
+/* ─── Navigation ────────────────────────────────────────────── */
+nav {
+  position: sticky;
+  top: 0;
+  background: #fafaf8;
+  border-bottom: 1px solid #e0ddd6;
+  z-index: 100;
+  padding: 0.75rem 0;
+}
+
+.nav-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: #555;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #111;
+}
+
+/* ─── Main Layout ───────────────────────────────────────────── */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 2rem 3rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0ddd6;
+  margin: 3rem 0;
+}
+
+/* ─── About Section ─────────────────────────────────────────── */
+h1 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.3rem;
+  color: #111;
+}
+
+.korean {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.position {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.4rem;
+}
+
+.bio {
+  margin-bottom: 1.4rem;
+  color: #333;
+}
+
+.research-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.research-fields span {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0.2rem 0.65rem;
+  background: #f3f1ec;
+}
+
+.contact-links {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: #555;
+}
+
+.contact-links a {
+  color: #3a5a8c;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  margin: 0 0.4rem;
+  color: #bbb;
+}
+
+/* ─── Section Headings ──────────────────────────────────────── */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #111;
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e8e5de;
+  padding-bottom: 0.4rem;
+}
+
+/* ─── Papers ────────────────────────────────────────────────── */
+.paper {
+  margin-bottom: 1.6rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e0ddd6;
+}
+
+.paper-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 0.2rem;
+}
+
+.paper-title-en {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.paper-authors {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.paper-meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.83rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+}
+
+.paper-links {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.83rem;
+  margin-bottom: 0.25rem;
+}
+
+.paper-links a {
+  color: #3a5a8c;
+  text-decoration: none;
+  margin-right: 0.6rem;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+.paper-abstract {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.toggle-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: #3a5a8c;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 0.4rem;
+}
+
+.toggle-label:hover {
+  text-decoration: underline;
+}
+
+.abstract-text {
+  display: none;
+}
+
+/* ─── CV Section ────────────────────────────────────────────── */
+.cv-block {
+  margin-bottom: 1.5rem;
+}
+
+.cv-entry {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.6rem;
+  align-items: baseline;
+}
+
+.cv-year {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #888;
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.cv-detail {
+  font-size: 0.98rem;
+  color: #333;
+}
+
+.cv-download {
+  margin-top: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+}
+
+.cv-download a {
+  color: #3a5a8c;
+  text-decoration: none;
+}
+
+.cv-download a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Footer ────────────────────────────────────────────────── */
+footer {
+  border-top: 1px solid #e0ddd6;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #aaa;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #333;
+}
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  main { padding: 2.5rem 1.2rem 2rem; }
+  .nav-inner { padding: 0 1.2rem; }
+  h1 { font-size: 1.7rem; }
+  .cv-entry { flex-direction: column; gap: 0.1rem; }
+  .cv-year { min-width: unset; }
+}
