@@ -63,13 +63,10 @@
     <section id="research">
       <h2>Research</h2>
 
-      <!-- Working Papers -->
       <h3>Working Papers</h3>
 
       <div class="paper">
-        <p class="paper-title">
-          The Macroeconomic Effects of Gig Work: Insurance Against Labor Market Risk
-        </p>
+        <p class="paper-title">The Macroeconomic Effects of Gig Work: Insurance Against Labor Market Risk</p>
         <p class="paper-authors">Kisan Choi</p>
         <p class="paper-abstract">
           <span class="toggle-label" onclick="toggleAbstract(this)">[Abstract]</span>
@@ -90,9 +87,7 @@
       </div>
 
       <div class="paper">
-        <p class="paper-title">
-          Revisiting Labor Market Policies in the Presence of Fallback Self-employment
-        </p>
+        <p class="paper-title">Revisiting Labor Market Policies in the Presence of Fallback Self-employment</p>
         <p class="paper-authors">Kisan Choi</p>
         <p class="paper-abstract">
           <span class="toggle-label" onclick="toggleAbstract(this)">[Abstract]</span>
@@ -115,9 +110,7 @@
       </div>
 
       <div class="paper">
-        <p class="paper-title">
-          Effects of New Technology Adoption in Korea: Implications for Growth, Employment, and Inequality
-        </p>
+        <p class="paper-title">Effects of New Technology Adoption in Korea: Implications for Growth, Employment, and Inequality</p>
         <p class="paper-authors">Kisan Choi and Eunseong Ma</p>
         <p class="paper-meta">BOK Working Paper No. 2026-7</p>
         <p class="paper-links">
@@ -145,17 +138,13 @@
         </p>
       </div>
 
-      <!-- Work in Progress -->
       <h3>Work in Progress</h3>
 
       <div class="paper">
-        <p class="paper-title">
-          Education, Mobility, and Welfare in a Core–Periphery Economy
-        </p>
+        <p class="paper-title">Education, Mobility, and Welfare in a Core–Periphery Economy</p>
         <p class="paper-authors">Kisan Choi and Yuhan Lee</p>
       </div>
 
-      <!-- Publications -->
       <h3>Publications</h3>
 
       <div class="paper">
@@ -185,8 +174,8 @@
           <span class="cv-detail">Economist, <strong>Bank of Korea</strong></span>
         </div>
         <div class="cv-entry">
-          <span class="cv-year">Current</span>
-          <span class="cv-detail">Team Head, Economic Research Team, Daegu-Gyeongbuk Branch</span>
+          <span class="cv-year"></span>
+          <span class="cv-detail cv-indent">Current: Team Head / Senior Economist, Economic Research Team, Daegu-Gyeongbuk Branch</span>
         </div>
       </div>
 
@@ -216,6 +205,7 @@
   </footer>
 
   <script>
+    // Abstract toggle
     function toggleAbstract(el) {
       const abstractText = el.nextElementSibling;
       if (abstractText.style.display === 'inline') {
@@ -226,6 +216,28 @@
         el.textContent = '[Hide]';
       }
     }
+
+    // Scroll fade-in
+    const fadeEls = document.querySelectorAll('section, .paper, .cv-block');
+    fadeEls.forEach(el => el.classList.add('fade-in'));
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => fadeObserver.observe(el));
+
+    // Active nav on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const active = document.querySelector(`nav a[href="#${e.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.3 });
+    sections.forEach(s => navObserver.observe(s));
   </script>
 
 </body>

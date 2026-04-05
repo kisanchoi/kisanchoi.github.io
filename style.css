@@ -64,6 +64,11 @@ nav ul li a:hover {
   color: #111;
 }
 
+nav ul li a.active {
+  color: #111;
+  font-weight: 500;
+}
+
 /* ─── Main Layout ───────────────────────────────────────────── */
 main {
   max-width: 960px;
@@ -192,6 +197,12 @@ h3 {
   margin-bottom: 1.6rem;
   padding-left: 1rem;
   border-left: 2px solid #e0ddd6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .paper-title {
@@ -322,6 +333,18 @@ footer a {
 
 footer a:hover {
   color: #333;
+}
+
+/* ─── Fade-in ───────────────────────────────────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ─── Responsive ────────────────────────────────────────────── */
