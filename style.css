@@ -17,6 +17,13 @@ body {
   background: #fafaf8;
 }
 
+/* ─── Accent Bar ────────────────────────────────────────────── */
+.accent-bar {
+  height: 3px;
+  background: linear-gradient(to right, #3a5a8c, #7a9bbf);
+  width: 100%;
+}
+
 /* ─── Navigation ────────────────────────────────────────────── */
 nav {
   position: sticky;
@@ -347,6 +354,12 @@ footer a {
 
 footer a:hover {
   color: #333;
+}
+
+.footer-updated {
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+  color: #ccc;
 }
 
 /* ─── Fade-in ───────────────────────────────────────────────── */
