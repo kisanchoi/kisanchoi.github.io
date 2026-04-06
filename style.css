@@ -212,6 +212,20 @@ h3 {
   margin-bottom: 0.2rem;
 }
 
+.paper-title-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #3a5a8c;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.paper-title-link:hover {
+  text-decoration: underline;
+}
+
 .paper-title-en {
   font-weight: 400;
   font-size: 0.95rem;
