@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'EB Garamond', Georgia, serif;
+  font-family: 'EB Garamond', 'Noto Serif KR', Georgia, serif;
   font-size: 18px;
   line-height: 1.75;
   color: #222;
@@ -231,6 +231,12 @@ h3 {
 
 .paper-title-link:hover {
   text-decoration: underline;
+}
+
+.paper-title-ko {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .paper-title-en {
