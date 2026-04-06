@@ -179,8 +179,8 @@ h1 {
 
 /* ─── Section Headings ──────────────────────────────────────── */
 h2 {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
   letter-spacing: 0.02em;
   color: #111;
   margin-bottom: 1.6rem;
@@ -188,7 +188,7 @@ h2 {
 
 h3 {
   font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -235,7 +235,7 @@ h3 {
 
 .paper-title-ko {
   font-family: 'Noto Serif KR', serif;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
