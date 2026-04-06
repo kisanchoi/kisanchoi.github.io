@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'EB Garamond', 'Noto Serif KR', Georgia, serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.75;
   color: #222;
   background: #fafaf8;
@@ -179,7 +179,7 @@ h1 {
 
 /* ─── Section Headings ──────────────────────────────────────── */
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.625rem;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #111;
@@ -213,7 +213,7 @@ h3 {
 }
 
 .paper-title {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #111;
   margin-bottom: 0.2rem;
@@ -247,7 +247,7 @@ h3 {
 
 .paper-authors {
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.0625rem;
   color: #666;
   margin-bottom: 0.2rem;
 }
